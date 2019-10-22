@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #F0B242 !important;
+}
+
+.carousel .carousel-inner {
+    height: 546px;
+    width: 100%;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    height: 546px;
+    width: 100%;
+    object-fit: cover; 
+}
+
