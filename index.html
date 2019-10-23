@@ -8,9 +8,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/bphostel-logo.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -18,10 +19,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Service and Facility</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service-facility">Service and Facility</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,39 +52,248 @@
         </div>
 
         <div class="container-fluid padding">
-            <div class="row welcome text-center">
-                <div class="col-12">
-                    <h1>Inquire Now</h1>
+            <div class="row padding justify-content-center">
+                <div class="col-lg-9 desc text-center">
+                    <h3>Backpackers Hostel — Ximen focuses on providing the highest quality accomodation for backpackers.</h3>
+                    <p>Independent shower facility, selected beds & beddings, personal safe and power sockets are provided for traveler's needs.
+                        The room type includes twin, quad bunk beds, and single bunk beds for 4 guests. Travelling with a group of friends
+                        makes it a fine choice. Meeting other travelers from abroad makes it an even more memorable experience.
+                    </p>
                 </div>
             </div>
+            
+            <div class="row padding justify-content-center" id="rooms">
+                <div class="col-lg-9 room-desc mt-4 mb-3">
+                    <h1>Rooms</h1>
+                    <div class="row padding room-options">
+
+                        <!-- Card start -->
+                        <div class="card my-3 mx-3">
+                            <div class="card-header">Twin Room</div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="images/room-01.jpg" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-block my-2 mx-2">
+                                        <p class="card-text">Facilities:</p>
+                                        <ul class="card-text">
+                                            <li>For 2 guests</li>
+                                            <li>2 single bed(s)</li>
+                                            <li>Breakfast not included</li>
+                                            <li>Additional guest and bed is not available</li>
+                                            <li>Amenities: In-room wireless internet access / individual head lamp / 
+                                                personal safe / private power socket / shower / hair dryer / window
+                                            </li>
+                                        </ul>
+                                        <div class="btn book-btn">
+                                                <button class="btn btn-primary btn-block">Book Now</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card my-3 mx-3">
+                                <div class="card-header">Quad Room</div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img class="img-fluid" src="images/room-03.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-block my-2 mx-2">
+                                            <p class="card-text">Facilities:</p>
+                                            <ul class="card-text">
+                                                <li>For 4 guests</li>
+                                                <li>4 single bed(s)</li>
+                                                <li>Breakfast not included</li>
+                                                <li>Additional guest and bed is not available</li>
+                                                <li>Amenities: In-room wireless internet access / individual head lamp / 
+                                                    personal safe / private power socket / shower / hair dryer / window
+                                                </li>
+                                            </ul>
+                                            <div class="btn book-btn">
+                                                    <button class="btn btn-primary btn-block">Book Now</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card my-3 mx-3">
+                                    <div class="card-header">4 Single Bunk Beds (Male)</div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img class="img-fluid" src="images/room-03.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-block my-2 mx-2">
+                                                <p class="card-text">Facilities:</p>
+                                                <ul class="card-text">
+                                                    <li>Double deck of total 4 bunk beds</li>
+                                                    <li>Charged and reserved unit by 1 bed</li>
+                                                    <li>Breakfast not included</li>
+                                                    <li>Additional guest and bed is not available</li>
+                                                    <li>Amenities: In-room wireless internet access / individual head lamp / 
+                                                        personal safe / private power socket / shower / hair dryer / window
+                                                    </li>
+                                                </ul>
+                                                <div class="btn book-btn">
+                                                        <button class="btn btn-primary btn-block">Book Now</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card my-3 mx-3">
+                                        <div class="card-header">4 Single Bunk Beds (Female)</div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <img class="img-fluid" src="images/room-03.jpg" alt="">
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="card-block my-2 mx-2">
+                                                    <p class="card-text">Facilities:</p>
+                                                    <ul class="card-text">
+                                                        <li>Double deck of total 4 bunk beds</li>
+                                                        <li>Charged and reserved unit by 1 bed</li>
+                                                        <li>Breakfast not included</li>
+                                                        <li>Additional guest and bed is not available</li>
+                                                        <li>Amenities: In-room wireless internet access / individual head lamp / 
+                                                            personal safe / private power socket / shower / hair dryer / window
+                                                        </li>
+                                                    </ul>
+                                                    <div class="btn book-btn">
+                                                            <button class="btn btn-primary btn-block">Book Now</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        <!-- Card end-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row padding justify-content-center" id="service-facility">
+                <div class="col-lg-9 service-desc">
+                    <h1>Service and Facility</h1>
+                    <div class="service-wrapper text-center mt-5 row">
+                        <div class="common-room col-lg-4 mb-4">
+                            <div class="col">
+                                <img src="images/television.png">
+                            </div>
+                            <div class="col">
+                                <h3>Common Room</h3>
+                                <p>One of the greatest features of youth hostel is the common room.
+                                    Where travelers may interact with one another, the common room is located on the
+                                    underground level. Computer, TV, and couch are provided for guest to rest or enjoy
+                                    other's company. 
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="laundry col-lg-4 mb-4">
+                            <div class="col">
+                                <img src="images/washing-machine.png">
+                            </div>
+                            <div class="col">
+                                <h3>Self Serve Laundry</h3>
+                                <p>Self serve laundry is provided with washing machine and drying machines. One of the
+                                    necessary facilities for backpacker guests.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="toiletries col-lg-4 mb-4">
+                            <div class="col">
+                                <img src="images/toiletries.png">
+                            </div>
+                            <div class="col">
+                                <h3>Toiletries</h3>
+                                <p>Shampoo and shower gels are provided in the rooms. Other toiletries like tooth
+                                    brush and towels are available for purchase on the first floor.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row padding justify-content-center" id="about">
+                <div class="col-lg-9 about-desc">
+                    <h1>About Us</h1>
+                    <div class="about-wrapper mt-3 row">
+                        <div class="about-1 row mx-auto mb-5">
+                            <div class="col-lg-6">
+                                <p class="pt-4">Backpackers Hostel — Ximen is situated near the busy Ximending Shopping Area. We are a
+                                    youth hostel designed for both local and foreign backpackers. The interior design combines modern
+                                    art and local culture. The murals are painted by renowned artist Candy Bird including the large
+                                    pieces in the lobby, common room, and the hallways. It brings out an artistic, young and energetic
+                                    atmosphere.
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/ximending.jpg" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="about-2 row mx-auto mb-3">
+                            <div class="col-lg-6">
+                                <img src="images/common-rm.jpg" class="img-fluid">
+                            </div>
+                            <div class="col-lg-6 pt-4">
+                                <p>The common room located on the underground level provides TV, computer, and comfortable couch for
+                                    guests to meet friends and relax. The hostel is clean and comfortable, where you may experience
+                                    the warm and hospitable service in the most budget friendly rates. We welcome you to Backpackers
+                                    Hostel — Ximen and share your journey. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row padding justify-content-center mb-5" id="contact">
+                <div class="col-lg-9 contact-desc">
+                    <h1>Contact Us</h1>
+                    <div class="location-wrapper row">
+                        <div class="col-lg-6 mb-4 location pt-4">
+                            <p class="lead"><strong>Backpackers Hostel Co., Ltd.</strong></p>
+                            <p>No. 13, Ln. 25, Kangding Rd., Wanhua Dist., Taipei City</p>
+                            <p>10843, Taiwan (R.O.C)</p>
+                            <p>Phone: +886-2-8978-3666</p>
+                            <button class="btn btn-primary facebook-btn">
+                                <i class="fa fa-facebook"></i> Facebook
+                            </button>
+                        </div>
+                        <div class="col-lg-6 mb-4 map d-flex justify-content-center">
+                            <img src="images/map.PNG" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <div class="col-md-6 offset-md-3">
-            <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="formgroup1" placeholder="Enter Fullname" required>
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <p>Backpackers Hostel Co., Ltd.</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email-input" placeholder="Enter Email Address" required>
+                    <div class="col-md-6 col-sm-6 copyright">
+                        <p>&copy; KP Design</p>
                     </div>
-                    <div class="form-group">
-                        <label for="room">Inquire for room price</label>
-                        <select class="form-control" id="roomSelect">
-                            <option selected>-- Select Room --</option>
-                            <option>Twin Room</option>
-                            <option>Quad Room</option>
-                            <option>4 Single Bunk Beds (Male)</option>
-                            <option>4 Single Bunk Beds (Female)</option>
-                        </select> 
-                    </div>
-                    <button class="btn btn-primary" type="submit"> Submit</button>
-                </form>
-        </div>
+                </div>
+            </div>
+        </footer>
         
-
-
         
     </body>
 </html>
