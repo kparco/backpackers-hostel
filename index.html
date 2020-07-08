@@ -1,299 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/bphostel-logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#service-facility">Service and Facility</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backpackers Hostel</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="https://kit.fontawesome.com/64522e10a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="menubar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="images/bphostel-logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div id="slides" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#slides" data-slide-to="0" class="active"></li>
-                <li data-target="#slides" data-slide-to="1"></li>
-                <li data-target="#slides" data-slide-to="2"></li>
-                <li data-target="#slides" data-slide-to="3"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/bph-bg.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/bg.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/bg-1.jpg">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/bg-2.jpg">
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Facility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div> 
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/bg.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="images/bg-1.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="images/bg-2.jpg" alt="">
+          </div>
         </div>
-
-        <div class="container-fluid padding">
-            <div class="row padding justify-content-center">
-                <div class="col-lg-9 desc text-center">
-                    <h3>Backpackers Hostel — Ximen focuses on providing the highest quality accomodation for backpackers.</h3>
-                    <p>Independent shower facility, selected beds & beddings, personal safe and power sockets are provided for traveler's needs.
-                        The room type includes twin, quad bunk beds, and single bunk beds for 4 guests. Travelling with a group of friends
-                        makes it a fine choice. Meeting other travelers from abroad makes it an even more memorable experience.
-                    </p>
-                </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="mask"></div>
+      <div class="carousel-text">
+        <h1>Backpackers Hostel — Ximen</h1>
+        <h2>Focuses on providing the highest quality accomodation for backpackers</h2>
+      </div>
+    </section>
+    <section class="booking">
+      <div class="booking-form">
+        <form class="form">
+          <div class="form-row align-item-center">
+            <div class="col-md-3 col-sm-8 input">
+              <label class="mr-sm-2" for="arrivalInput">Arrival</label>
+              <input type="date" class="mr-sm-2" id="arrivalInput">
             </div>
-            
-            <div class="row padding justify-content-center" id="rooms">
-                <div class="col-lg-9 room-desc mt-4 mb-3">
-                    <h1>Rooms</h1>
-                    <div class="row padding room-options">
-
-                        <!-- Card start -->
-                        <div class="card my-3 mx-3">
-                            <div class="card-header">Twin Room</div>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img class="img-fluid" src="images/room-01.jpg" alt="">
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="card-block my-2 mx-2">
-                                        <p class="card-text">Facilities:</p>
-                                        <ul class="card-text">
-                                            <li>For 2 guests</li>
-                                            <li>2 single bed(s)</li>
-                                            <li>Breakfast not included</li>
-                                            <li>Additional guest and bed is not available</li>
-                                            <li>Amenities: In-room wireless internet access / individual head lamp / 
-                                                personal safe / private power socket / shower / hair dryer / window
-                                            </li>
-                                        </ul>
-                                        <div class="btn book-btn">
-                                                <button class="btn btn-primary btn-block">Book Now</button>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card my-3 mx-3">
-                                <div class="card-header">Quad Room</div>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <img class="img-fluid" src="images/room-03.jpg" alt="">
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="card-block my-2 mx-2">
-                                            <p class="card-text">Facilities:</p>
-                                            <ul class="card-text">
-                                                <li>For 4 guests</li>
-                                                <li>4 single bed(s)</li>
-                                                <li>Breakfast not included</li>
-                                                <li>Additional guest and bed is not available</li>
-                                                <li>Amenities: In-room wireless internet access / individual head lamp / 
-                                                    personal safe / private power socket / shower / hair dryer / window
-                                                </li>
-                                            </ul>
-                                            <div class="btn book-btn">
-                                                    <button class="btn btn-primary btn-block">Book Now</button>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card my-3 mx-3">
-                                    <div class="card-header">4 Single Bunk Beds (Male)</div>
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <img class="img-fluid" src="images/room-03.jpg" alt="">
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="card-block my-2 mx-2">
-                                                <p class="card-text">Facilities:</p>
-                                                <ul class="card-text">
-                                                    <li>Double deck of total 4 bunk beds</li>
-                                                    <li>Charged and reserved unit by 1 bed</li>
-                                                    <li>Breakfast not included</li>
-                                                    <li>Additional guest and bed is not available</li>
-                                                    <li>Amenities: In-room wireless internet access / individual head lamp / 
-                                                        personal safe / private power socket / shower / hair dryer / window
-                                                    </li>
-                                                </ul>
-                                                <div class="btn book-btn">
-                                                        <button class="btn btn-primary btn-block">Book Now</button>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card my-3 mx-3">
-                                        <div class="card-header">4 Single Bunk Beds (Female)</div>
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <img class="img-fluid" src="images/room-03.jpg" alt="">
-                                            </div>
-                                            <div class="col-md-7">
-                                                <div class="card-block my-2 mx-2">
-                                                    <p class="card-text">Facilities:</p>
-                                                    <ul class="card-text">
-                                                        <li>Double deck of total 4 bunk beds</li>
-                                                        <li>Charged and reserved unit by 1 bed</li>
-                                                        <li>Breakfast not included</li>
-                                                        <li>Additional guest and bed is not available</li>
-                                                        <li>Amenities: In-room wireless internet access / individual head lamp / 
-                                                            personal safe / private power socket / shower / hair dryer / window
-                                                        </li>
-                                                    </ul>
-                                                    <div class="btn book-btn">
-                                                            <button class="btn btn-primary btn-block">Book Now</button>
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                        <!-- Card end-->
-                    </div>
-                </div>
+            <div class="col-md-3 col-sm-8 input">
+              <label class="mr-sm-2" for="departureInput">Departure</label>
+              <input type="date" class="mr-sm-2" id="departureInput">
             </div>
-
-            <div class="row padding justify-content-center" id="service-facility">
-                <div class="col-lg-9 service-desc">
-                    <h1>Service and Facility</h1>
-                    <div class="service-wrapper text-center mt-5 row">
-                        <div class="common-room col-lg-4 mb-4">
-                            <div class="col">
-                                <img src="images/television.png">
-                            </div>
-                            <div class="col">
-                                <h3>Common Room</h3>
-                                <p>One of the greatest features of youth hostel is the common room.
-                                    Where travelers may interact with one another, the common room is located on the
-                                    underground level. Computer, TV, and couch are provided for guest to rest or enjoy
-                                    other's company. 
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="laundry col-lg-4 mb-4">
-                            <div class="col">
-                                <img src="images/washing-machine.png">
-                            </div>
-                            <div class="col">
-                                <h3>Self Serve Laundry</h3>
-                                <p>Self serve laundry is provided with washing machine and drying machines. One of the
-                                    necessary facilities for backpacker guests.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="toiletries col-lg-4 mb-4">
-                            <div class="col">
-                                <img src="images/toiletries.png">
-                            </div>
-                            <div class="col">
-                                <h3>Toiletries</h3>
-                                <p>Shampoo and shower gels are provided in the rooms. Other toiletries like tooth
-                                    brush and towels are available for purchase on the first floor.
-                                </p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+            <div class="col-md-3 col-sm-8 input">
+              <label class="mr-sm-2" for="guestCount">No. of Guests</label>
+              <select class="custom-select mr-sm-2" id="guestCount">
+                <option selected>Choose...</option>
+                <option value="1">1 to 2</option>
+                <option value="2">3 to 5</option>
+                <option value="3">6 to 10</option>
+              </select>
             </div>
-
-            <div class="row padding justify-content-center" id="about">
-                <div class="col-lg-9 about-desc">
-                    <h1>About Us</h1>
-                    <div class="about-wrapper mt-3 row">
-                        <div class="about-1 row mx-auto mb-5">
-                            <div class="col-lg-6">
-                                <p class="pt-4">Backpackers Hostel — Ximen is situated near the busy Ximending Shopping Area. We are a
-                                    youth hostel designed for both local and foreign backpackers. The interior design combines modern
-                                    art and local culture. The murals are painted by renowned artist Candy Bird including the large
-                                    pieces in the lobby, common room, and the hallways. It brings out an artistic, young and energetic
-                                    atmosphere.
-                                </p>
-                            </div>
-                            <div class="col-lg-6">
-                                <img src="images/ximending.jpg" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="about-2 row mx-auto mb-3">
-                            <div class="col-lg-6">
-                                <img src="images/common-rm.jpg" class="img-fluid">
-                            </div>
-                            <div class="col-lg-6 pt-4">
-                                <p>The common room located on the underground level provides TV, computer, and comfortable couch for
-                                    guests to meet friends and relax. The hostel is clean and comfortable, where you may experience
-                                    the warm and hospitable service in the most budget friendly rates. We welcome you to Backpackers
-                                    Hostel — Ximen and share your journey. 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-3 col-sm-8 book-now">
+              <button class="btn btn-book">Book Now</button>
             </div>
-
-            <div class="row padding justify-content-center mb-5" id="contact">
-                <div class="col-lg-9 contact-desc">
-                    <h1>Contact Us</h1>
-                    <div class="location-wrapper row">
-                        <div class="col-lg-6 mb-4 location pt-4">
-                            <p class="lead"><strong>Backpackers Hostel Co., Ltd.</strong></p>
-                            <p>No. 13, Ln. 25, Kangding Rd., Wanhua Dist., Taipei City</p>
-                            <p>10843, Taiwan (R.O.C)</p>
-                            <p>Phone: +886-2-8978-3666</p>
-                            <button class="btn btn-primary facebook-btn">
-                                <i class="fa fa-facebook"></i> Facebook
-                            </button>
-                        </div>
-                        <div class="col-lg-6 mb-4 map d-flex justify-content-center">
-                            <img src="images/map.PNG" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="content">
+      <div class="content-cards">
+        <div class="row row-cards">
+          <div class="col-md-4 col-sm-8">
+            <div class="card">
+              <img src="images/room-01.jpg" alt="room">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Rooms</a>
+              </div>
             </div>
-
+          </div>
+          <div class="col-md-4 col-sm-8">
+            <div class="card">
+              <img src="images/fa3.jpg" alt="room">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Facility</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-8">
+            <div class="card">
+              <img src="images/about-01.jpg" alt="room">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">About Us</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container contact-details">
+        <div class="row col-12 justify-content-center heading">
+          <h3>Contact Us</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 map">
+            <img src="images/map.PNG">
+          </div>
+          <div class="col-sm-12  col-md-6 address">
+            <h5>Backpackers Hostel Co., Ltd.</h5>
+            <p>No. 13, Ln. 25, Kangding Rd., Wanhua Dist., Taipei City</p>
+            <p>10843, Taiwan (R.O.C)</p>
+            <p>TEL: +886-2-8978-3666</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <footer>
-            <div class="container-fluid padding">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <p>Backpackers Hostel Co., Ltd.</p>
-                    </div>
-                    <div class="col-md-6 col-sm-6 copyright">
-                        <p>&copy; KP Design</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-        
-    </body>
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="footer-details">
+        <div class="col-md-6 col-sm-10 mx-auto">
+          <h4 class="brand-name">Backpackers Hostel Co., Ltd.</h4>
+          <div class="info">
+            <p>No. 13, Ln. 25, Kangding Rd., Wanhu Dist., Taipei City</p>
+            <p>10843, Taiwan (R.O.C)</p>
+            <p>TEL: +886-2-8978-3666</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-10 mx-auto">
+          <div class="social-icons">
+            <i class="fab fa-facebook-square fa-3x"></i>
+            <i class="fab fa-line fa-3x"></i>
+            <p class="credit">KP © 2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>

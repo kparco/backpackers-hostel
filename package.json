@@ -1,0 +1,23 @@
+{
+  "name": "backpackers-hostel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch scss/main.scss css/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kparco/backpackers-hostel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kparco/backpackers-hostel/issues"
+  },
+  "homepage": "https://github.com/kparco/backpackers-hostel#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  }
+}
