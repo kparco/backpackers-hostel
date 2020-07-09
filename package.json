@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch scss/main.scss css/style.css "
+    "scss": "node-sass --watch scss/main.scss css/style.css --importer node_modules/node-sass-import"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "node-sass-import": "^2.0.1"
   }
 }
