@@ -1,0 +1,60 @@
+// Header style
+@import 'variables';
+@import 'breakpt';
+
+.menubar {
+  background-color: $theme-color;
+  .navbar {
+    @media only screen and (max-width: 991px) {
+      padding-left: 0px;
+      padding-right: 0px;
+      .navbar-brand {
+        margin-left: 10px;
+        img {
+          width: 100%;
+        }
+      }
+      .navbar-toggler {
+        margin-right: 10px;
+      }
+      .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 1px solid $dark-color;
+        padding-top: 10px;
+        margin-top: 10px;
+      }
+    }
+    @include breakpt(l-mobile) {
+      .navbar-nav {
+        flex-direction: column !important;
+        padding-top: 0px;
+      }
+    }
+    @media only screen and (max-width: 342px) {
+      .navbar-brand {
+        width: 65%;
+      }
+    }
+    .nav-item{
+      @include breakpt(l-mobile) {
+        border-bottom: 1px solid $dark-color;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      .nav-link {
+        text-transform: uppercase;
+        padding: 10px 20px 0px;
+        font-weight: 600;
+        @include breakpt(l-mobile) {
+          padding-bottom: 10px;
+        }
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
