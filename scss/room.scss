@@ -1,0 +1,70 @@
+@import 'var';
+@import 'breakpt';
+
+.room-banner {
+	height: 450px;
+	background: url('../images/room-banner.jpg') no-repeat center;
+	background-size: cover; 
+	@include breakpt(tablet) {
+		height: 250px;
+	}
+	@include breakpt(l-mobile) {
+		height: 180px;
+	}
+}
+
+.room-intro,
+.room-info {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+.room-text {
+	margin: auto;
+	width: 100%;
+	.heading {
+		margin: 35px auto;
+	}
+	.desc {
+		padding: 0px 10px 30px;
+		@include breakpt(large) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+
+.room-details {
+	margin: 0px;
+	padding: 60px 0px;
+	@include breakpt(large) {
+		padding: 60px 15px;
+	}
+	@include breakpt(tablet) {
+		padding: 40px 15px;
+	}
+	.room-img {
+		img {
+			width: 100%;
+			height: 450px;
+			object-fit: cover;
+			@include breakpt(tablet) {
+				height: auto;
+			}
+		}
+	}
+	.room-type {
+		@include breakpt(tablet) {
+			padding-top: 20px;
+		}
+	}
+}
+
+.divider {
+	max-width: 70%;
+	background-color: $theme-color;
+	@include breakpt(tablet) {
+		margin-bottom: 20px;
+	}
+}
