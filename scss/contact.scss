@@ -5,6 +5,12 @@
 	height: 450px;
 	background: url('../images/bg-1.jpg') no-repeat center;
 	background-size: cover;
+	@include breakpt(tablet) {
+		height: 250px;
+	}
+	@include breakpt(l-mobile) {
+		height: 180px;
+	}
 }
 
 .con-info {

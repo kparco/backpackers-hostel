@@ -8,6 +8,9 @@
 	@include breakpt(tablet) {
 		height: 250px;
 	}
+	@include breakpt(l-mobile) {
+		height: 180px;
+	}
 }
 
 .fa-info {
