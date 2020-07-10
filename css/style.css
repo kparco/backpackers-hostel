@@ -447,7 +447,8 @@ body {
 
 .contact-form .con-input {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 10px; }
   @media only screen and (max-width: 767px) {
     .contact-form .con-input {
       margin-bottom: 20px; } }
