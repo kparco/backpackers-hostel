@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Facility</title>
+	<title>Contact Us</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://kit.fontawesome.com/64522e10a9.js" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div> 
@@ -38,50 +38,38 @@
 	</header>
 
 	<main>
-		<section class="fa-banner">
-		</section>
-		<section class="fa-info">
-			<div class="row fa-intro">
-				<h1 class="heading">Facility</h1>
-			</div>
-			<div class="row fa-details">
-				<div class="col-md-8 col-sm-12 fa-img">
-					<img src="images/fa1.jpg" alt="Common Room">
-				</div>
-				<div class="col-md-4 col-sm-12 fa-desc">
-					<h3>Common Room</h3>
-					<hr class="line">
-					<p>One of the greatest features of youth hostel is the common room.
-						Where travelers may interact with one another, the common room
-						is located on the underground level. Computer, TV, and couch are
-						provided for guest to rest or enjoy other's company.
-					</p>
-				</div>
+		<section class="con-banner"></section>
+		<section class="con-info">
+			<div class="row con-intro">
+				<h1 class="heading">Contact Us</h1>
 			</div>
 			<hr class="divider">
-			<div class="row fa-details">
-				<div class="col-md-8 col-sm-12 fa-img">
-					<img src="images/fa2.jpg" alt="Self Serve Laundry">
+			<div class="row con-details">
+				<div class="col-md-7 col-sm-12 con-map">
+					<img src="images/map.PNG" alt="hostel map">
 				</div>
-				<div class="col-md-4 col-sm-12 fa-desc">
-					<h3>Self Serve Laundry</h3>
-					<hr class="line">
-					<p>Self serve laundry is provided with washing and drying machines. One
-						of the necessary facilities for Backpackers guests.
-					</p>
-				</div>
-			</div>
-			<hr class="divider">
-			<div class="row fa-details">
-				<div class="col-md-8 col-sm-12 fa-img">
-					<img src="images/fa3.jpg" alt="Toiletries">
-				</div>
-				<div class="col-md-4 col-sm-12 fa-desc">
-					<h3>Toiletries</h3>
-					<hr class="line">
-					<p>Shampoo and shower gel are provided in the rooms. Other toiletries like
-						toothbrush and towels are available for purchase on the first floor.
-					</p>
+				<div class="col-md-5 col-sm-12 con-form">
+					<form class="contact-form">
+						<div class="col-12 con-input">
+							<label for="userName">Name</label>
+							<input type="text" id="userName" placeholder="Your name" required>
+						</div>
+						<div class="col-12 con-input">
+							<label for="phoneNumber">Phone Number</label>
+							<input type="tel" id="phoneNumber" placeholder="Your number">
+						</div>
+						<div class="col-12 con-input">
+							<label for="email">Email</label>
+							<input type="email" id="email" placeholder="Your email" required>
+						</div>
+						<div class="col-12 con-input">
+							<label for="message">Message</label>
+							<textarea class="form-control" id="message" cols="30" rows="5" placeholder="Your Message" required></textarea>
+						</div>
+						<div class="col-12 con-submit">
+							<button type="button" class="btn btn-contact">Send Inquiry</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>

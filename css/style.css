@@ -395,3 +395,77 @@ body {
       padding: 30px 40px 0px; } }
   .abt-text p {
     margin-bottom: 40px; }
+
+.con-banner {
+  height: 450px;
+  background: url("../images/bg-1.jpg") no-repeat center;
+  background-size: cover; }
+
+.con-info {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 50px; }
+
+.con-intro {
+  margin: 0px; }
+  .con-intro .heading {
+    margin: 35px auto; }
+
+.con-details {
+  padding: 30px 0px;
+  max-width: 990px;
+  margin: auto; }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .con-details {
+      padding: 0px 20px; } }
+  @media only screen and (max-width: 767px) {
+    .con-details {
+      padding: 30px; } }
+  @media only screen and (max-width: 430px) {
+    .con-details {
+      padding: 30px 20px; } }
+  .con-details .con-map {
+    display: flex;
+    justify-content: center; }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .con-details .con-map {
+        align-items: center; } }
+    .con-details .con-map img {
+      width: 100%;
+      height: auto; }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .con-details .con-map img {
+          height: 300px; } }
+  @media only screen and (max-width: 767px) {
+    .con-details .con-form {
+      padding: 0px; } }
+
+@media only screen and (max-width: 767px) {
+  .contact-form {
+    margin-top: 30px; } }
+
+.contact-form .con-input {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (max-width: 767px) {
+    .contact-form .con-input {
+      margin-bottom: 20px; } }
+  .contact-form .con-input input {
+    border-radius: 4px;
+    border: 1px solid #CED4DA;
+    padding: 5px 10px; }
+
+.contact-form .con-submit {
+  margin-top: 30px; }
+  .contact-form .con-submit .btn-contact {
+    background-color: #F0B242;
+    border: 1px solid #F0B242;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px 0px;
+    color: #ffffff; }
+    .contact-form .con-submit .btn-contact:hover {
+      background-color: #d69d33;
+      border: #d69d33;
+      padding: 11px 0px; }
