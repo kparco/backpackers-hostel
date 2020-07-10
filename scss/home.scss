@@ -226,10 +226,16 @@ body {
 	}
 	h4 {
 		font-size: 22px;
+		@include breakpt(l-mobile) {
+			font-size: 20px;
+		}
 	}
 	p {
 		font-size: 14px;
 		margin-bottom: 0px;
+		@include breakpt(l-mobile) {
+			font-size: 13px;
+		}
 	}
 	.social-icons {
 		text-align: right;
