@@ -1,0 +1,37 @@
+@import 'var';
+@import 'breakpt';
+
+.abt-banner {
+	height: 450px;
+	background: url('../images/bg-2.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.abt-info {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+.abt-intro {
+	margin: 0px;
+	.heading {
+		margin: 35px auto;
+	}
+}
+
+.abt-text {
+	padding-top: 30px;
+	max-width: 900px;
+	margin: auto;
+	@include breakpt(m-large) {
+		padding: 30px 30px 0px; 
+	}
+	@include breakpt(tablet) {
+		padding: 30px 40px 0px;
+	}
+	p {
+		margin-bottom: 40px;
+	}
+}
